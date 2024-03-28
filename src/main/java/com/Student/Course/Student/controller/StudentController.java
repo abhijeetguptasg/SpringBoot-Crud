@@ -51,16 +51,7 @@ public class StudentController {
 	{
 		return service.updateStudentById(id, student);
 	}
-	@GetMapping("/ascdate")
-	private List<Student> getBySortedDateAsc(@RequestParam String feild) {
-		
-		return service.sortByDateAsc(feild);
-		
-	}
-	@GetMapping("/dscdate")
-	private List<Student> getBySortedDateDsc(@RequestParam String field) {
-		
-		return service.sortByDateDsc(field);
+	
 		
 	}
 }
