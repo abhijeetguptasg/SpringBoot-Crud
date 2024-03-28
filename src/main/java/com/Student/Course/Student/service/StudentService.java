@@ -64,12 +64,5 @@ public class StudentService {
 		}
 		return null;
 	} 
-	public  List<Student> sortByDateAsc(String feild)
-	{
-		return repo.findAll(Sort.by(Direction.ASC,feild));
-	}
-	public  List<Student> sortByDateDsc(String feild)
-	{
-		return repo.findAll(Sort.by(Direction.DESC,feild));
-	}
+	
 }
